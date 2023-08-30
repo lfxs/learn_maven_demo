@@ -77,13 +77,13 @@ public class CustomerService {
      */
     public List<Customer> getCustomerList(){
         Connection conn = null;
-        try {
+        //try {
             conn = DataBaseHelper.getConnection();
             String sql = "select * from customer";
             return DataBaseHelper.queryEntityList(Customer.class,sql,conn);
-        }finally {
+        /*}finally {
             DataBaseHelper.closeConnection();
-        }
+        }*/
     }
 
 
@@ -101,7 +101,8 @@ public class CustomerService {
      * 创建客户
      */
     public boolean createCustomer(Map<String,Object> fieldMap){
-        return false;
+
+        return DataBaseHelper.insertEntity(Customer.class,fieldMap);
     }
 
     /**
@@ -109,7 +110,7 @@ public class CustomerService {
      * 更新客户
      */
     public boolean updateCustomer(long id ,Map<String,Object> fieldMap){
-        return false;
+        return DataBaseHelper.updateEntity(Customer.class,id,fieldMap);
     }
 
 
@@ -118,7 +119,7 @@ public class CustomerService {
      * 删除客户
      */
     public boolean deleteCustomer(long id){
-        return false;
+        return DataBaseHelper.deleteEntity(Customer.class,id);
     }
 
 

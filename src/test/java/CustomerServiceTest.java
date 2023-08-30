@@ -13,6 +13,11 @@ public class CustomerServiceTest {
         customerService = new CustomerService();
     }
 
+    /*@Before
+    public void init() throws Exception{
+
+        DataBaseHelper.executeSqlFile("sql/customer_init.sql");
+    }*/
     /**
      *
      * 获取客户列表清单
