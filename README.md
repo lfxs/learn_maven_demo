@@ -1,2 +1,6 @@
 # learn_maven_demo
 架构探险 从头搭建web项目
+MVC是一种常用的设计模式,但是随着Servlet的数量会随着业务功能的扩展而不断的增加
+因此,可以将某类业务交给Controller来处理,它负责调用Service的相关方法,并将返回值放入Request或者Response.
+
+轻量级框架---Smart Framework
