@@ -19,7 +19,7 @@ public class PropsUtil {
         Properties props = null;
         InputStream is = null;
         try {
-           is = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
+            is = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
            if(is == null){
                throw new FileNotFoundException(fileName + "file is not found");
            }

@@ -7,11 +7,8 @@
     <groupId>org.example</groupId>
     <artifactId>learn_maven_demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>smart</module>
-    </modules>
     <!--maven 项目默认 packing 是 jar,因为项目初期是从maven项目转化为web项目,需要指定packing为war-->
-    <packaging>pom</packaging>
+    <packaging>war</packaging>
     <properties>
         <!--源代码的编译方式 统一为UTF-8 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
